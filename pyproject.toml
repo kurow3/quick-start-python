@@ -1,0 +1,57 @@
+[build-system]
+requires = [
+  "hatchling",
+]
+build-backend = "hatchling.build"
+
+[project]
+name = "example_package"
+version = "0.0.1"
+description = "A example package."
+authors = [
+  {name = "Example Author", email = "author@example.com"},
+]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+classifiers = [
+  "Intended Audience :: Developers",
+  "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Other/Nonlisted Topic",
+]
+keywords = [
+  "tutorial",
+  "example",
+  "development",
+]
+dependencies = [
+]
+
+[project.optional-dependencies]
+dev = [
+  "debugpy",
+  "pytest",
+  "pytest-cov",
+  "sphinx",
+  "build",
+]
+
+[project.scripts]
+example-cli = "example_package.__main__:main"
+
+[project.urls]
+"Homepage" = "https://author.example.com"
+"Source" = "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY"
+"Tracker" = "https://github.com/YOUR-USERNAME/YOUR-REPOSITORY/issues"
+
+[tool.hatch.build]
+ignore-vcs = true
+exclude = [
+  "/docker",
+  "/docs/html",
+  "/docker-compose*.yml",
+  "/*.code-workspace",
+  ".*",
+]

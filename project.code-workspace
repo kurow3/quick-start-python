@@ -1,0 +1,19 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
+    "livePreview.serverRoot": "/docs/html",
+    "livePreview.portNumber": 49252,
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-vscode-remote.vscode-remote-extensionpack"
+    ]
+  }
+}
