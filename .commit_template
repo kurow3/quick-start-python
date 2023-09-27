@@ -1,0 +1,52 @@
+# e.g., "🔥 Add missing parameters", "🔖 0.5.2"
+
+# ================================================
+# = Commit Message Format
+# ================================================
+# <PREFIX> <SUMMARY>
+# 
+# <DESCRIPTION>
+# ================================================
+#
+# ===========================================
+# = PREFIX
+# ===========================================
+# + One of these
+#   🎉: Initial commit
+#   🔖: Version tag
+#   ✨: New features
+#   🔥: Bugfixes
+#   🛡: Security improvements
+#   🕹️: UI improvements
+#   🚀: Performance improvements
+#   🔋: Energy saving Improvements
+#   💎: Formatting
+#   💫: Refactoring
+#   💣: Breaking changes
+#   ➕: Adding dependencies
+#   ➖: Removing dependencies
+#   ⬆: Upgrading dependencies
+#   ⬇: Downgrading dependencies
+#   🧪: Tests
+#   📚: Documentation
+#   💚: Continuous Integration
+#   📦: Packaging
+#   🛠: Tools
+#   ⚙️: Configuration
+#   🚧: Work In Progress
+#   🗑: Reverting changes
+#   🔀: Merging
+#   ⚡: Others
+#
+# ===========================================
+# = SUMMARY
+# ===========================================
+# + 1-50 characters
+# + Single line
+#
+# ===========================================
+# = DESCRIPTION
+# ===========================================
+# + 0-72 characters
+# + Single line or multiple lines
+#
