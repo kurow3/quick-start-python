@@ -9,14 +9,14 @@ By using this repository as a template, you can proceed with development using s
 
 ### Prerequisites
 
-The following software is required to use [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers){:target="_blank"}:  
-- [Visual Studio Code](https://code.visualstudio.com){:target="_blank"}
-- [Docker](https://www.docker.com){:target="_blank"}
+The following software is required to use [Visual Studio Code Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers):  
+- [Visual Studio Code](https://code.visualstudio.com)
+- [Docker](https://www.docker.com)
 
 
 ### Create workspace
 
-1. Create your own repository based on [this one](https://github.com/kurow3/quick-start-python){:target="_blank"}
+1. Create your own repository based on [this one](https://github.com/kurow3/quick-start-python)
 1. Clone the repository you created:
    ```
    git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
