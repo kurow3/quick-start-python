@@ -1,0 +1,127 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Debug",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/debug.sh",
+      "args": [
+        "${input:argsPrompt}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Run",
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/run.sh",
+      "args": [
+        "${input:argsPrompt}"
+      ],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Generate Document Sources",
+      "group": {
+        "kind": "none",
+        "isDefault": false
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/gen-docsrc.sh",
+      "args": [],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/test.sh",
+      "args": [],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Build Documents",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/build-docs.sh",
+      "args": [],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Build Package",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "type": "process",
+      "command": "${workspaceFolder}/tools/build-package.sh",
+      "args": [],
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "argsPrompt",
+      "description": "Enter any arguments.",
+      "default": ""
+    }
+  ]
+}

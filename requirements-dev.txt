@@ -1,0 +1,12 @@
+# Debugging
+debugpy
+
+# Tests
+pytest
+pytest-cov
+
+# Documentation
+sphinx
+
+# Packaging
+build
